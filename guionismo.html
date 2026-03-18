@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guionismo | Portafolio de Mitzy</title>
+  <link rel="stylesheet" href="guionismo.css" />
+</head>
+	
+	
+	
+<body>
+  <header class="barra-superior">
+    <h1>Guionismo</h1>
+    <nav>
+      <a href="Portafolio.html" class="boton-regreso">Regresar al inicio</a>
+    </nav>
+  </header>
+
+  <main>
+	  
+    <section class="intro">
+      <h2>Mi visión en guionismo</h2>
+      <p>
+        Creo historias que conectan emociones con imágenes. Mis guiones buscan
+        transmitir la vida misma.
+      </p>
+    </section>
+
+    <section class="visor">
+      <h2>Visualiza mis guiones</h2>
+
+      <!-- Botones -->
+      <div class="botones-guiones">
+        <button onclick="cargarGuion('FUI_YO_GUION_FINAL.pdf')">¿Fui yo?</button>
+        <button onclick="cargarGuion('ENTRE NOTAS.pdf')">Entre notas</button>
+        <button onclick="cargarGuion('RAMASDELTIEMPO.pdf')">Ramas del tiempo</button>
+      </div>
+
+      <!--visor dinámico -->
+      <iframe id="visorPDF" src="portada.pdf" width="100%" height="600px"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mitzy | Portafolio</p>
+  </footer>
+
+  <script>
+    function cargarGuion(archivo) {
+      document.getElementById('visorPDF').src = archivo;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #E8E7DD;/* beige cálido → crema */
+  color: #662C05; /* café oscuro */
+}
+
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(87, 60, 40, 0.85); /* café translúcido */
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #EB9901; /* ocre */
+}
+
+.barra-superior h1 {
+  font-size: 1.8rem;
+  color: #FFFFFF; /* ocre cálido */
+}
+
+.boton-regreso {
+  background: transparent;
+  border: 2px solid #EB9901;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.boton-regreso:hover {
+  background: #EB9901;
+  color: #3e2a1f; /* café oscuro */
+}
+
+.intro {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #8b5e3c; /* café medio */
+  margin-bottom: 1rem;
+}
+
+.visor {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.visor h2 {
+  margin-bottom: 1rem;
+  color: #8b5e3c; /* café medio */
+}
+
+.botones-guiones {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.botones-guiones button {
+  background: #a0522d; /* marrón rojizo */
+  border: none;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botones-guiones button:hover {
+  background: #d9a066; /* ocre */
+  color: #3e2a1f;
+}
+
+iframe {
+  border: none;
+  box-shadow: 0 0 12px rgba(139, 94, 60, 0.4); /* sombra café */
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(139, 94, 60, 0.2); /* café translúcido */
+  color: #5a4633;
+  margin-top: 2rem;
+}

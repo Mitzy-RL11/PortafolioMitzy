@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Base */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #E8E7DD; /* beige cálido */
+  color: #662C05; /* café oscuro */
+}
+
+/* Barra superior */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(87, 60, 40, 0.85); /* café translúcido */
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #089607; /* verde acento */
+}
+
+.barra-superior h1 {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+
+/* Botón regreso */
+.boton-regreso {
+  background: transparent;
+  border: 2px solid #EB9901; /* naranja */
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.boton-regreso:hover {
+  background: #EB9901;
+  color: #3e2a1f;
+}
+
+/* Intro */
+.intro {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #8b5e3c; /* café medio */
+  margin-bottom: 0.75rem;
+}
+
+/* Pantalla tipo cine para reel */
+.pantalla-reel {
+  display: flex;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  align-items: flex-start;
+}
+
+.pantalla {
+  flex: 2;
+  background: #3e2a1f; /* sala de cine */
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(62, 42, 31, 0.7);
+}
+
+.pantalla iframe {
+  width: 100%;
+  height: 420px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(139, 94, 60, 0.4);
+}
+
+.descripcion {
+  flex: 1;
+  background: #fff8dc; /* crema cálida */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(139, 94, 60, 0.3);
+}
+
+.descripcion h3 {
+  color: #8b3a3a; /* rojizo otoñal */
+  margin-bottom: 0.5rem;
+}
+
+/* Galería de piezas */
+.galeria {
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.galeria h2 {
+  text-align: center;
+  color: #8b5e3c;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff8dc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(139, 94, 60, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.thumb img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.meta {
+  padding: 0.9rem;
+  color: #662C05;
+}
+
+.meta h3 {
+  margin: 0 0 0.4rem 0;
+  color: #8b3a3a;
+  font-size: 1.05rem;
+}
+
+.meta p {
+  margin: 0.2rem 0;
+  line-height: 1.35;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.6rem;
+  background: #a0522d; /* marrón rojizo */
+  color: #fff;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d9a066; /* ocre */
+  color: #3e2a1f;
+}
+
+/* Herramientas */
+.herramientas {
+  max-width: 1100px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.herramientas h2 {
+  color: #8b5e3c;
+  margin-bottom: 1rem;
+}
+
+.cuadro {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: #fff8dc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(139, 94, 60, 0.4);
+}
+
+.cuadro img {
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(62, 42, 31, 0.4);
+}
+
+.lista-herramientas {
+  flex: 1;
+  text-align: left;
+  color: #662C05;
+}
+
+.lista-herramientas ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.6rem;
+}
+
+.lista-herramientas li {
+  margin-bottom: 0.55rem;
+  font-weight: bold;
+  background: rgba(235, 153, 1, 0.12); /* acento naranja suave */
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .pantalla-reel { flex-direction: column; }
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+  .cuadro { flex-direction: column; }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(139, 94, 60, 0.2);
+  color: #5a4633;
+  margin-top: 2rem;
+}.video-box {
+  display: inline-block;       /* se ajusta al contenido */
+  background-color: #6d4c41;   /* café */
+  padding: 15px;               /* margen interno alrededor del video */
+  border-radius: 8px;          /* esquinas redondeadas */
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3); /* sombra opcional */
+}
+
+.video-box video {
+  display: block;
+  width: 100%;
+  max-width: 500px;            /* tamaño promedio del video */
+  border-radius: 4px;          /* esquinas del video */
+}
+
+.card1 {
+  background: #fff8dc;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 300px;
+  height: 380px; /* altura fija para todas las tarjetas */
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card1 .thumb {
+  width: 100%;
+  height: 200px; /* espacio reservado para imagen o video */
+  background-color: #000; /* fondo neutro si el video no llena todo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1 .thumb img,
+.card1 .thumb video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* evita que se estire */
+  border-radius: 4px;
+}
+
+.card1 .meta {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
